@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsent Messages Post-it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send Your Unsent Message</h1>
+        <p>Write your unsent message, and choose a color for your sticky note!</p>
+        
+        <form id="messageForm">
+            <label for="senderName">Your Name:</label>
+            <input type="text" id="senderName" name="senderName" placeholder="Your Name" required>
+            
+            <label for="receiverName">To (Receiver's Name):</label>
+            <input type="text" id="receiverName" name="receiverName" placeholder="Receiver's Name" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <label for="color">Choose Note Color:</label>
+            <select id="color" name="color">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="skyblue">Sky Blue</option>
+                <option value="pink">Pink</option>
+                <option value="lilac">Lilac</option>
+                <option value="purple">Purple</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+
+            <button type="submit">Submit Message</button>
+        </form>
+
+        <div id="messagesContainer">
+            <!-- Messages will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
